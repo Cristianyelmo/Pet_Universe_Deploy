@@ -12,7 +12,7 @@ const productosTipo =$("#productos_tipo")
 const productosOrden =$("#producto_orden")
 const todoProducto = $("#todo-producto")
 
-const apiGetProducts = 'http://localhost:3000/api/products/gatos'
+const apiGetProducts = 'https://pet-universee.onrender.com/api/products/gatos'
 const getCourses = ({page=1,productType=0,price="false"}={})=>{
     return fetch(`${apiGetProducts}?page=${page}&productType=${productType}&price=${price}`).then(res => res.json())
 }
