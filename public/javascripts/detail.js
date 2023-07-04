@@ -8,8 +8,11 @@ btnAddCart.addEventListener('click',async () => {
     const objProductId = {
       productId: id,
     }
+
+
+    
       
-      const {ok} = await fetch(`http://localhost:3000/api/cart/addProduct`,{ 
+      const {ok} = await fetch(`https://pet-universee.onrender.com/api/cart/addProduct`,{ 
           method:"POST",
           body: JSON.stringify(objProductId),
           headers: {
