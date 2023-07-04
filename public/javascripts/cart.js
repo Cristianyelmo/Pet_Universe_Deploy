@@ -3,7 +3,7 @@ const cardsContainer = $('#cards-container')
 const clearCart = $('#clear-cart')
 const btnBuy = $('#btn-buy')
 const outputTotal = $('#output-total')
-const URL_API_SERVER = "http://localhost:3000/api"
+const URL_API_SERVER = "https://pet-universee.onrender.com/api"
 
 
 const getOrder = () => {

@@ -10,7 +10,7 @@ const productosTipo =$("#productos_tipo")
 const productosOrden =$("#producto_orden")
 const todoProducto = $("#todo-producto")
 
-const apiGetProducts = 'http://localhost:3000/api/products/perros'
+const apiGetProducts = 'https://pet-universee.onrender.com/api/products/perros'
 const getCourses = ({page=1,productType=0,price="false"}={})=>{
     return fetch(`${apiGetProducts}?page=${page}&productType=${productType}&price=${price}`).then(res => res.json())
 }
@@ -89,7 +89,7 @@ const paintCourses = (products)=>{
 const addProductToCart = async (id) => {
     try {
         
-        const {ok} = await fetch(`http://localhost:3000/api/cart/addProduct`,{ 
+        const {ok} = await fetch(`https://pet-universee.onrender.com/api/cart/addProduct`,{ 
             method:"POST",
             body: JSON.stringify({
                 productId: id

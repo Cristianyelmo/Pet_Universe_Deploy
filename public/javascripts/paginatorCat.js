@@ -91,7 +91,7 @@ const paintCourses = (products)=>{
 const addProductToCart = async (id) => {
     try {
         
-        const {ok} = await fetch(`http://localhost:3000/api/cart/addProduct`,{ 
+        const {ok} = await fetch(`https://pet-universee.onrender.com/api/cart/addProduct`,{ 
             method:"POST",
             body: JSON.stringify({
                 productId: id
